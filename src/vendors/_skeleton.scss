@@ -587,8 +587,8 @@ hr {
 
 // Self Clearing Goodness
 
-.container:after,
-.row:after,
+.container:after:not(.container-flex),
+.row:after:not(.container-flex),
 .u-cf {
   content: "";
   display: table;

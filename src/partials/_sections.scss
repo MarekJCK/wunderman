@@ -1,0 +1,109 @@
+.section-banner {
+  background: url(../../img/banner.png);
+  height: 500px;
+}
+
+.section-boxes {
+  position: relative;
+  bottom: 90px;
+
+  .box {
+    padding: 20px;
+    margin-bottom: 17px;
+    background: $white;
+    & p {
+      height: 48px;
+      overflow-y: scroll;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+  .tag {
+    color: $white;
+    background: $purple;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3px 5px;
+    text-transform: uppercase;
+  }
+  .section-devider {
+    width: 100%;
+    padding: 10px;
+    margin-top: 9px;
+    margin-bottom: 72px;
+    color: $white;
+    background: $purple;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.section-about {
+  background: $white;
+  display: flex;
+  padding-bottom: 50px;
+
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+
+    & .about-text {
+        margin-left: 4%;
+
+        h2 {
+          color: $purple;
+        }
+
+        .button {
+          color: $white;
+          background-color: $purple;
+          text-transform: uppercase;
+          border: 1px solid $purple;
+          border-radius: 0;
+          margin-right: 5px;
+        }
+    }
+  }
+}
+
+.section-purple-boxes {
+  background: $purple;
+  display: flex;
+
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+
+    & .box {
+        padding: 50px 10px;
+
+      & p {
+        position: relative;
+        bottom: 8px;
+        color: $purple;
+        background-color: $white;
+        padding: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.section-contact {
+  background: $white;
+  display: flex;
+  padding: 50px 0;
+
+  .contact-icons {
+    img {
+      margin-right: 25px;
+    }
+  }
+  .contact-text {
+    h2 {
+        color: $purple;
+     }
+  }
+}
