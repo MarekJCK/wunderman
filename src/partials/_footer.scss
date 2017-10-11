@@ -1,0 +1,40 @@
+.page-footer {
+  display: flex;
+  padding: 25px 0;
+
+  & a {
+    color: $blue;
+    font-size: 17px;
+  }
+
+  & a:hover {
+    color: $grey;
+  }
+
+  .microsoft {
+    padding-bottom: 10px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+
+    .language {
+      display: flex;
+      align-items: center;
+
+      & img {
+        padding-right: 15px;
+      }
+
+      & span:nth-of-type(1) {
+        color: $blue;
+      }
+    }
+
+    .links-in a {
+      padding-right: 15px;
+    }
+  }
+
+}

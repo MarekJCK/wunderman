@@ -1,18 +1,47 @@
 .section-banner {
-  background: url(../../img/banner.png);
-  height: 500px;
+  background: url(../../img/banner.png) no-repeat 100% 0%;
+  height: 560px;
+
+  .titles {
+    position: relative;
+    top: 20%;
+
+    h1, h3 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 204px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    img {
+      position: absolute;
+      top: 43%;
+      right: 21%;
+
+      @include breakpoint($tablet-max) {
+        right: -1%;
+      }
+    }
+  }
 }
 
 .section-boxes {
   position: relative;
-  bottom: 90px;
+  bottom: 100px;
 
   .box {
     padding: 20px;
     margin-bottom: 17px;
     background: $white;
     & p {
-      height: 48px;
+      height: 120px;
+      font-size: 26px;
       overflow-y: scroll;
     }
     & img {
@@ -22,9 +51,9 @@
   .tag {
     color: $white;
     background: $purple;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    padding: 3px 5px;
+    padding: 3px 8px;
     text-transform: uppercase;
   }
   .section-devider {
@@ -34,7 +63,7 @@
     margin-bottom: 72px;
     color: $white;
     background: $purple;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -43,17 +72,23 @@
 .section-about {
   background: $white;
   display: flex;
-  padding-bottom: 50px;
+  padding: 50px 0;
 
   .container-flex {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     & .about-text {
         margin-left: 4%;
 
         h2 {
           color: $purple;
+          font-size: 45px;
+        }
+
+        p {
+          font-size: 24px;
         }
 
         .button {
@@ -63,6 +98,9 @@
           border: 1px solid $purple;
           border-radius: 0;
           margin-right: 5px;
+          font-size: 16px;
+          padding: 10px 30px;
+          height: auto;
         }
     }
   }
@@ -72,9 +110,17 @@
   background: $purple;
   display: flex;
 
+  @include breakpoint($tablet-max) {
+    display: block;
+  }
+
   .container-flex {
     display: flex;
     flex-direction: row;
+
+    @include breakpoint($tablet-max) {
+      display: block;
+    }
 
     & .box {
         padding: 50px 10px;
@@ -84,8 +130,14 @@
         bottom: 8px;
         color: $purple;
         background-color: $white;
-        padding: 15px;
+        padding: 10px;
         margin-bottom: 0;
+        font-size: 24px;
+
+        @include breakpoint($tablet-max) {
+          width: 290px;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -96,6 +148,12 @@
   display: flex;
   padding: 50px 0;
 
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .contact-icons {
     img {
       margin-right: 25px;
@@ -104,6 +162,11 @@
   .contact-text {
     h2 {
         color: $purple;
+        font-size: 45px;
+     }
+
+     p {
+       font-size: 24px;
      }
   }
 }
