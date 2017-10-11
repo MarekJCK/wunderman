@@ -39,12 +39,12 @@
     padding: 20px;
     margin-bottom: 17px;
     background: $white;
-    & p {
+    p {
       height: 120px;
       font-size: 26px;
       overflow-y: scroll;
     }
-    & img {
+    img {
       width: 100%;
     }
   }
@@ -79,29 +79,29 @@
     flex-direction: row;
     align-items: center;
 
-    & .about-text {
-        margin-left: 4%;
+    .about-text {
+      margin-left: 4%;
 
-        h2 {
-          color: $purple;
-          font-size: 45px;
-        }
+      h2 {
+        color: $purple;
+        font-size: 45px;
+      }
 
-        p {
-          font-size: 24px;
-        }
+      p {
+        font-size: 24px;
+      }
 
-        .button {
-          color: $white;
-          background-color: $purple;
-          text-transform: uppercase;
-          border: 1px solid $purple;
-          border-radius: 0;
-          margin-right: 5px;
-          font-size: 16px;
-          padding: 10px 30px;
-          height: auto;
-        }
+      .button {
+        color: $white;
+        background-color: $purple;
+        text-transform: uppercase;
+        border: 1px solid $purple;
+        border-radius: 0;
+        margin-right: 5px;
+        font-size: 16px;
+        padding: 10px 30px;
+        height: auto;
+      }
     }
   }
 }
@@ -122,10 +122,10 @@
       display: block;
     }
 
-    & .box {
+    .box {
         padding: 50px 10px;
 
-      & p {
+      p {
         position: relative;
         bottom: 8px;
         color: $purple;

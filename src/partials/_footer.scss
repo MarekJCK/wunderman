@@ -2,12 +2,12 @@
   display: flex;
   padding: 25px 0;
 
-  & a {
+  a {
     color: $blue;
     font-size: 17px;
   }
 
-  & a:hover {
+  a:hover {
     color: $grey;
   }
 
@@ -23,11 +23,11 @@
       display: flex;
       align-items: center;
 
-      & img {
+      img {
         padding-right: 15px;
       }
 
-      & span:nth-of-type(1) {
+      span:nth-of-type(1) {
         color: $blue;
       }
     }
