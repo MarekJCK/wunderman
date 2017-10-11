@@ -1,5 +1,5 @@
 .section-banner {
-  background: url(../../img/banner.png) no-repeat 100% 0%;
+  background: url(../../img/banner.png);
   height: 560px;
 
   .titles {
@@ -42,7 +42,8 @@
     p {
       height: 120px;
       font-size: 26px;
-      overflow-y: scroll;
+      overflow-y: hidden;
+      margin-top: 2.5rem;
     }
     img {
       width: 100%;
